@@ -32,5 +32,29 @@ namespace HojaTrabajo1
             result = Math.Sqrt((Math.Pow(a, 2)) + (Math.Pow(b, 2)));
             resultado.Text = result.ToString();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String texto = entrada1.Text;
+
+            char[] caracteres = texto.ToCharArray();
+
+            
+            int contador = 0;
+
+            for(int i = 0; i<caracteres.Length; i++)
+            {
+                char actual = caracteres[i];
+                if(actual=='a'||actual=='á'||actual=='A'||actual=='Á'|| actual == 'e' || actual == 'é' || actual == 'E' || actual == 'É'|| actual == 'i' || actual == 'í' || actual == 'I' || actual == 'Í'|| actual == 'o' || actual == 'ó' || actual == 'O' || actual == 'Ó'|| actual == 'u' || actual == 'ú' || actual == 'U' || actual == 'Ú')
+                {
+                    contador++;
+                }
+            }
+
+            if (contador >= 5)
+                resultado.Text = "CUMPLE";
+            else
+                resultado.Text = "NO CUMPLE";
+        }
     }
 }
