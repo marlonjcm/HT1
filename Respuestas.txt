@@ -1,0 +1,12 @@
+¿Qué entiende como "commit"?
+Un commit es un cuando se realiza un cambio en los archivos de un proyecto y estos cambios los registramos
+
+¿Qué entiende como "merge"?
+Merge se realiza cuando hemos estado trabajando en diferentes ramas del proyecto y queremos unirlas en una sola.
+
+¿Cuál es la diferencia entre "Pull" y "Push"?
+El Pull lo utilizamos para obtener los archivos desde nuestro repositorio en la nube.
+El Push sirve para subir los cambios que hemos realizado a nuestro repositorio en línea,
+
+¿Cómo utilizar ramas("branches") en la aplicación?
+Las ramas son utilizadas cuando queremos llevar un proyecto de manera paralela al principal sin afectarlo.
