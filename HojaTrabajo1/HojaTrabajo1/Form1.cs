@@ -56,5 +56,32 @@ namespace HojaTrabajo1
             else
                 resultado.Text = "NO CUMPLE";
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            String nombre = entrada1.Text;
+            String apellido = entrada2.Text;
+
+            char[] ncaracteres = nombre.ToCharArray();
+            char[] napellido = apellido.ToCharArray();
+
+            int no_n = ncaracteres.Length - 1;
+            int no_a = napellido.Length - 1;
+
+            string nombre_i ="", apellido_i="";
+
+            for(int j=no_n; j >= 0; j--)
+            {
+                nombre_i += ncaracteres[j];
+            }
+
+            for (int h = no_a; h >= 0; h--)
+            {
+                apellido_i += napellido[h];
+            }
+
+            resultado.Text = nombre_i + " " + apellido_i;
+
+        }
     }
 }
