@@ -80,7 +80,7 @@ namespace HojaTrabajo1
                 apellido_i += napellido[h];
             }
 
-            resultado.Text = nombre_i + " " + apellido_i;
+            resultado.Text = nombre_i + " " + apellido_i+"_201403907";
 
         }
 
