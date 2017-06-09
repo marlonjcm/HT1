@@ -83,5 +83,16 @@ namespace HojaTrabajo1
             resultado.Text = nombre_i + " " + apellido_i;
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double numero1 = Double.Parse(entrada1.Text);
+            double numero2 = Double.Parse(entrada2.Text);
+            double numero3 = Double.Parse(entrada3.Text);
+
+            double total = (numero3 * numero2) / numero1;
+
+            resultado.Text = total.ToString();
+        }
     }
 }
